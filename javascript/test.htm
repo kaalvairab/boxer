@@ -1,0 +1,61 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+  <title></title>
+  <style type="text/css">
+    body {
+      background-color: black;
+      color: white;
+    }
+
+    h1 {
+      font-family: tahoma;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    #img {
+      display: -webkit-box;
+      -webkit-box-pack: center;
+      opacity: 0.8;
+    }
+  </style>
+  <script type="text/javascript">
+
+    var arr = [];
+
+    arr[0] = new Image();
+    arr[0].src = "https://images.pexels.com/photos/4173221/pexels-photo-4173221.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940";
+
+    arr[1] = new Image();
+    arr[1].src = "https://images.pexels.com/photos/735911/pexels-photo-735911.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940";
+
+    arr[2] = new Image();
+    arr[2].src = "https://images.pexels.com/photos/158826/structure-light-led-movement-158826.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940";
+
+    var i = 0;
+
+    function slide() {
+      document.getElementById("image1").src = arr[i].src;
+      i++;
+      if (i == arr.length) {
+        i = 0;
+      }
+      setTimeout(function () { slide(); }, 2000);
+    }
+
+  </script>
+</head>
+
+<body onLoad="slide('image1',arr);">
+  <h1>WELCOME</h1>
+  <div id="img"><img id="image1" height="400px" width="600px" border="5" style="border-color:white;" /></div>
+
+
+
+</body>
+
+</html>
