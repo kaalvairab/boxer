@@ -3,6 +3,7 @@ body{
   margin: 0;
   padding: 0;
   position: relative;
+  box-sizing: border-box;
 }
 
 a{
@@ -102,6 +103,7 @@ font-size: 28px;
   display: flex;
   font-size: 34px;
   transition: all 0.3s ease;
+  
 }
 .navigation>div:hover{
 opacity: 0.6;
@@ -165,7 +167,7 @@ flex-direction: column;
 
 /* SERVICES */
 .services{
-  display: grid;
+  display: none;
   grid-template-rows: 4.5fr 1fr;
   grid-template-columns: 0.75fr 2fr 3fr;
   background-color: black;
@@ -203,8 +205,6 @@ grid-column: 1/3;
   color: #ffffff;
   display: flex;
 }
-.services-2>div{
-}
 
 .services-2-title{
   height: 100%;
@@ -222,9 +222,10 @@ width: 70%;
   color: #e6e6e6;
   font-size: 24px;
 }
-.services-2 a:hover{
+.services-2 a:hover, a:active{
   color: #ffffff;
 }
+
 .services-2 ul{
   list-style: none;
   text-align: left;
@@ -242,6 +243,7 @@ padding: 0;
 
 .services-description{
   position: absolute;
+  display: none;
 }
 
 .active{

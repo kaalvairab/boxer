@@ -39,6 +39,7 @@ const showHide = (hide, show) => {
 
 }
 
+
 // NAVIGATION OPEN
 navOpen.addEventListener('click', e => {
   showHide(navigation, landing);
@@ -56,12 +57,33 @@ servicesOpen.addEventListener('click', e => {
 // SERVICES CLOSE
 servicesClose.addEventListener('click', e => {
   showHide(navigation, services);
+  showHide(navigation, landing);
 });
 
-// LIST OF SERVICES
-let servicesList = document.querySelector('.services-list').children;
-console.log(servicesList)
 
-let servicesDetail = document.querySelector('services-3').children;
-console.log(servicesDetail)
+// LIST OF SERVICES
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+function openTab(evt, tabId) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("services-description");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("services-link");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the link that opened the tab
+  document.getElementById(tabId).style.display = "block";
+  evt.currentTarget.className += " active";
+}
 
