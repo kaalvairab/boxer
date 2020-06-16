@@ -16,25 +16,31 @@
   <!-- ANIMATE.CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
 
+  <!-- MOBILE ADDRESS BAR COLOR -->
+  <meta name="theme-color" content="#000000">
+
+  <!-- FONT AWESONE LIBRARY -->
+  <script src="https://kit.fontawesome.com/9337df7910.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body onload="slide()">
 
   <!-- Landing Page -->
-  <div class="landing" id="landing">
+  <section class="landing" id="landing">
 
     <div style="background-color: #000000;opacity: 0.5;height: 100%;"></div>
     <div class="landing-content hover-under">
-      <a href="#">Events</a><br>
-      <a href="#">Studios</a><br>
-      <a href="#">Marketing</a><br>
-      <a href="#">Technology</a>
+      <a href="#" class="animate__animated animate__slideInUp animate__fast ">Events</a><br>
+      <a href="#" class="animate__animated animate__slideInUp animate__fast ">Studios</a><br>
+      <a href="#" class="animate__animated animate__slideInUp animate__fast ">Marketing</a><br>
+      <a href="#" class="animate__animated animate__slideInUp animate__fast ">Technology</a>
     </div>
-    <div class="menu">M E<br>N U</div>
-  </div>
+    <div class="menu animate__animated animate__zoomIn animate__fast">M E<br>N U</div>
+  </section>
 
   <!-- NAVIGATION -->
-  <div class="navigation container">
+  <section class="navigation container">
     <div class="navigation-1 navigation-social hover-under animate__animated animate__zoomIn animate__fast">
       <a href="#">Fb</a>
       <a href="#">Tw</a>
@@ -57,13 +63,13 @@
     </div>
 
     <div class="navigation-6 menu-close animate__animated animate__zoomIn animate__fast">X</div>
-  </div>
+  </section>
   <!-- END OF NAVIGATION -->
 
   <!-- SERVICES -->
-  <div class="container services">
-    <div class="services-1 animate__animated animate__zoomIn animate__fast">x</div>
-    <div class="services-2 animate__animated animate__zoomIn animate__fast">
+  <section id="services" class="container services grid-page">
+    <div class="services-1 grid-page-1 animate__animated animate__zoomIn animate__fast">x</div>
+    <div class="services-2 grid-page-2 animate__animated animate__zoomIn animate__fast">
       <div class="services-2-title">
         <h1>Services</h1>
       </div>
@@ -82,10 +88,10 @@
         </ul>
       </div>
     </div>
-    <div class="services-3 animate__animated animate__zoomIn animate__fast">
+    <div class="services-3 grid-page-3 animate__animated animate__zoomIn animate__fast">
       <div class="services-description animate__animated animate__fadeIn animate__slow" id="events">
         <h1>Events</h1>
-        <h3>"Website an Exposure in Digital Enviroment !"</h3>
+        <h3>" Lorem ipsum dolor sit amet, consectetur adipisicing elit ! "</h3>
 
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia voluptate libero dolorem maxime similique,
           omnis
@@ -98,11 +104,13 @@
           consectetur adipisicing elit. Quia voluptate libero dolorem maxime similique,
           omnis
         </p>
+
+
       </div>
 
       <div class="services-description animate__animated animate__fadeIn animate__slow" id="cinematography">
         <h1>Cinematography</h1>
-        <h3>"Website an Exposure in Digital Enviroment !"</h3>
+        <h3>" Lorem ipsum dolor sit amet, consectetur adipisicing elit ! "</h3>
 
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia voluptate libero dolorem maxime similique,
           omnis
@@ -118,7 +126,7 @@
       </div>
       <div class="services-description animate__animated animate__fadeIn animate__slow" id="photography">
         <h1>Photography</h1>
-        <h3>"Website an Exposure in Digital Enviroment !"</h3>
+        <h3>" Lorem ipsum dolor sit amet, consectetur adipisicing elit ! "</h3>
 
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia voluptate libero dolorem maxime similique,
           omnis
@@ -134,7 +142,7 @@
       </div>
       <div class="services-description animate__animated animate__fadeIn animate__slow" id="marketing">
         <h1>Marketing</h1>
-        <h3>"Website an Exposure in Digital Enviroment !"</h3>
+        <h3>" Lorem ipsum dolor sit amet, consectetur adipisicing elit ! "</h3>
 
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia voluptate libero dolorem maxime similique,
           omnis
@@ -150,7 +158,7 @@
       </div>
       <div class="services-description animate__animated animate__fadeIn animate__slow" id="website">
         <h1>Website</h1>
-        <h3>"Website an Exposure in Digital Enviroment !"</h3>
+        <h3>" Lorem ipsum dolor sit amet, consectetur adipisicing elit ! "</h3>
 
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia voluptate libero dolorem maxime similique,
           omnis
@@ -164,11 +172,74 @@
           omnis
         </p>
       </div>
+      <div id="services-contact" class="contact-btn">CONTACT US</div>
 
 
     </div>
-  </div>
+  </section>
   <!-- END OF SERVICES -->
+
+  <!-- ABOUT -->
+  <section id="about" class="container about grid-page">
+    <div class="grid-page-1 about-1 animate__animated animate__zoomIn animate__fast">X</div>
+    <div class="grid-page-2 about-2 animate__animated animate__zoomIn animate__fast">
+      <h1>TITLE</h1>
+      <h3>" Lorem, ipsum dolor sit amet consectetur adipisicing elit ! "</h3>
+    </div>
+    <div class="grid-page-3 about-3 animate__animated animate__zoomIn animate__fast">
+      <h1>ABOUT</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, temporibus cupiditate? Ea cumque, earum
+        eaque, quod rem distinctio numquam modi porro id nesciunt sunt incidunt qui! Fugiat blanditiis dolore inventore!
+        <br><br>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi impedit provident reiciendis obcaecati
+        laboriosam tempora quo! Minus illo quam temporibus perferendis reiciendis architecto, nulla quae. Vel iure
+        necessitatibus velit iste?
+      </p>
+      <br><br><br>
+      <div id="about-contact" class="contact-btn">CONTACT US</div>
+    </div>
+  </section>
+  <!-- END OF ABOUT -->
+
+  <!-- PEOPLE -->
+  <section id="people" class="container people grid-page">
+    <div class="grid-page-1 people-1 animate__animated animate__zoomIn animate__fast">X</div>
+    <div class="grid-page-2 people-2 animate__animated animate__zoomIn animate__fast">
+
+    </div>
+    <div class="grid-page-3 people-3 animate__animated animate__zoomIn animate__fast"></div>
+
+  </section>
+  <!-- END OF PEOPLE -->
+
+  <!-- CONTACT -->
+  <section id="contact" class="container grid-page contact">
+    <div class="grid-page-1 contact-1 animate__animated animate__zoomIn animate__fast">X</div>
+    <div class="grid-page-2 contact-2 animate__animated animate__zoomIn animate__fast">
+      <h2>Locate Us</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56516.27689201412!2d85.29111313454997!3d27.70903193365019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb198a307baabf%3A0xb5137c1bf18db1ea!2sKathmandu%2044600!5e0!3m2!1sen!2snp!4v1592290452749!5m2!1sen!2snp"
+        width="75%" height="75%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+        tabindex="0"></iframe>
+
+    </div>
+    <div class="grid-page-3 contact-3 animate__animated animate__zoomIn animate__fast">
+      <h1>Company Name</h1>
+      <h3>" Company Quote Lines !"</h3>
+      <div class="contact-details">
+        <div><i class="fas fa-map-marker-alt"></i> Street Address, Main Address</div><br>
+        <div><i class="fas fa-at"></i> username@companydomain.ext</div><br>
+        <div><i class="fas fa-phone-volume"></i> +99 - 9835758524848</div><br>
+      </div>
+      <br><br>
+      <div class="contact-social">
+        <a href="#"><i class="fab fa-facebook-square"></i></a>
+        <a href="#"><i class="fab fa-instagram-square"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-twitter-square"></i></a>
+      </div>
+    </div>
+  </section>
 
 
   <!-- JAVASCRIPT LINK -->

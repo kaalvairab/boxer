@@ -25,12 +25,29 @@ let navOpen = document.querySelector('.menu');
 
 
 //NAVIGATION PAGE
-let navClose = document.querySelector('.menu-close');
+let navClose = document.querySelector('.navigation-6');
 let servicesOpen = document.querySelector('.navigation-5');
+let aboutOpen = document.querySelector('.navigation-4');
+let peopleOpen = document.querySelector('.navigation-3');
 
 // SERVICES
 let servicesClose = document.querySelector('.services-1');
 let services = document.querySelector('.services');
+let servicesContactOpen = document.getElementById('services-contact');
+
+
+// ABOUT
+let about = document.querySelector('.about');
+let aboutClose = document.querySelector('.about-1');
+let aboutContactOpen = document.getElementById('about-contact');
+
+// PEOPLE
+let people = document.querySelector('.people');
+let peopleClose = document.querySelector('.people-1');
+
+// CONTACT
+let contact = document.querySelector('.contact');
+let contactClose = document.querySelector('.contact-1')
 
 // GLOBAL FUNCTION
 const showHide = (hide, show) => {
@@ -60,6 +77,10 @@ servicesClose.addEventListener('click', e => {
   showHide(navigation, landing);
 });
 
+// Contact from Services
+servicesContactOpen.addEventListener('click', e => {
+  showHide(contact, services);
+})
 
 // LIST OF SERVICES
 
@@ -86,4 +107,47 @@ function openTab(evt, tabId) {
   document.getElementById(tabId).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
+// ABOUT
+// OPEN
+aboutOpen.addEventListener('click', e => {
+  showHide(about, navigation);
+});
+
+// CLOSE
+aboutClose.addEventListener('click', e => {
+  showHide(navigation, about);
+  showHide(navigation, landing);
+});
+
+// CONTACT in ABOUT
+aboutContactOpen.addEventListener('click', e => {
+  showHide(contact, about);
+});
+
+
+// PEOPLE
+// OPEN
+peopleOpen.addEventListener('click', e => {
+  showHide(people, navigation);
+});
+
+// CLOSE
+peopleClose.addEventListener('click', e => {
+  showHide(navigation, people);
+  showHide(navigation, landing);
+});
+
+
+// CONTACT
+// Contact Close
+contactClose.addEventListener('click', e => {
+  showHide(navigation, contact);
+  showHide(navigation, landing);
+  showHide(navigation, services);
+  showHide(navigation, about);
+});
+
+
+
 
