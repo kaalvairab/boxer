@@ -1,0 +1,48 @@
+@media only screen and (max-width:1200px){
+
+
+}
+
+@media only screen and (max-width:992px){
+
+}
+
+@media only screen and (max-width:768px){
+  .landing a{
+    font-size: 60px;
+
+  }
+
+  .menu{
+    font-size: 20px;
+  }
+  
+  /* NAVIGATION */
+  .navigation-1 a {
+    font-size: 46px;
+}
+
+.navigation-2 a{
+  font-size: 50px;
+}
+
+/* SERVICES */
+.services-2-content {
+  width: 80%;
+}
+
+.services-description {
+  height: 70vh;
+}
+
+.contact-btn{
+  width: 40%;
+}
+}
+
+@media only screen and (max-width:600px){
+  .menu{
+    font-size: 14px;
+  }
+  
+}

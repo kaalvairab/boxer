@@ -10,8 +10,8 @@
   <!-- MAIN STYLESHEET -->
   <link rel="stylesheet" href="style/main.css">
 
-  <!-- MOBILE STYLESHET -->
-  <link rel="stylesheet" href="style/mobile.css" media="screen and (max-device-width: 850px)">
+  <!-- RESPONSIVE STYLESHET -->
+  <link rel="stylesheet" href="style/responsive.css">
 
   <!-- ANIMATE.CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
@@ -27,7 +27,7 @@
 <body onload="slide()">
 
   <!-- Landing Page -->
-  <section class="landing" id="landing">
+  <section class="landing container" id="landing">
 
     <div style="background-color: #000000;opacity: 0.5;height: 100%;"></div>
     <div class="landing-content hover-under">
@@ -41,28 +41,28 @@
 
   <!-- NAVIGATION -->
   <section class="navigation container">
-    <div class="navigation-1 navigation-social hover-under animate__animated animate__zoomIn animate__fast">
+    <div class="animate__animated animate__zoomIn animate__fast navigation-1 navigation-social hover-under ">
       <a href="#">Fb</a>
       <a href="#">Tw</a>
       <a href="#">Ig</a>
       <a href="#">Ln</a>
     </div>
 
-    <div class="navigation-2 navigation-services-list hover-under animate__animated animate__zoomIn animate__fast">
+    <div class=" animate__animated animate__zoomIn animate__fast navigation-2 navigation-services-list hover-under ">
       <a href="#">Events</a><br>
       <a href="#">Studios</a><br>
       <a href="#">Marketing</a><br>
       <a href="#">Technology</a>
     </div>
 
-    <div class="navigation-3 hover-under animate__animated animate__zoomIn animate__fast"><a href="#">People</a></div>
+    <div class="animate__animated animate__zoomIn animate__fast navigation-3 hover-under "><a href="#">People</a></div>
 
-    <div class="navigation-4 hover-under animate__animated animate__zoomIn animate__fast"><a href="#">About</a></div>
+    <div class=" animate__animated animate__zoomIn animate__fast navigation-4 hover-under"><a href="#">About</a></div>
 
-    <div class="navigation-5 hover-under animate__animated animate__zoomIn animate__fast"><a href="#">Services</a>
+    <div class=" animate__animated animate__zoomIn animate__fast navigation-5 hover-under"><a href="#">Services</a>
     </div>
 
-    <div class="navigation-6 menu-close animate__animated animate__zoomIn animate__fast">X</div>
+    <div class=" animate__animated animate__zoomIn animate__fast navigation-6 menu-close">X</div>
   </section>
   <!-- END OF NAVIGATION -->
 
@@ -75,9 +75,11 @@
       </div>
       <div class="services-2-content hover-under">
         <ul class="services-list">
-          <li onclick="openTab(event, 'events')" class="services-link" id="defaultOpen"><a href="#">e. Events</a></li>
+          <li onclick="openTab(event, 'events')" class="services-link" id="defaultOpenServices"><a href="#">e.
+              Events</a></li>
           <br>
-          <li onclick="openTab(event, 'cinematography')" class="services-link"><a href="#">c. Cinematography</a></li>
+          <li onclick="openTab(event, 'cinematography')" class="services-link"><a href="#">c. Cinematography</a>
+          </li>
           <br>
           <li onclick="openTab(event, 'photography')" class="services-link"><a href="#">p. Photography</a></li>
           <br>
@@ -183,6 +185,8 @@
   <section id="about" class="container about grid-page">
     <div class="grid-page-1 about-1 animate__animated animate__zoomIn animate__fast">X</div>
     <div class="grid-page-2 about-2 animate__animated animate__zoomIn animate__fast">
+      <div class="about-2-logo"><img src="https://www.freelogodesign.org/Content/img/logo-samples/flooop.png" alt="">
+      </div>
       <h1>TITLE</h1>
       <h3>" Lorem, ipsum dolor sit amet consectetur adipisicing elit ! "</h3>
     </div>
@@ -204,10 +208,157 @@
   <!-- PEOPLE -->
   <section id="people" class="container people grid-page">
     <div class="grid-page-1 people-1 animate__animated animate__zoomIn animate__fast">X</div>
-    <div class="grid-page-2 people-2 animate__animated animate__zoomIn animate__fast">
+    <div class="grid-page-2 services-2 people-2 animate__animated animate__zoomIn animate__fast">
+      <div class="people-2-title services-2-title">
+        <h1>People</h1>
+      </div>
+      <div class="people-2-content hover-under">
+        <ul class="people-list">
+          <li onclick="openTab(event, 'administration')" class="services-link" id="defaultOpenPeople"><a href="#">a.
+              Administration</a></li>
+          <br>
+          <li onclick="openTab(event, 'finance')" class="services-link"><a href="#">f. Finance</a></li>
+          <br>
+          <li onclick="openTab(event, 'technical')" class="services-link"><a href="#">t. Technical</a></li>
+          <br>
+          <li onclick="openTab(event, 'pmarketing')" class="services-link"><a href="#">m. Marketing</a></li>
+          <br>
+          <li onclick="openTab(event, 'others')" class="services-link"><a href="#">o. Others</a></li>
+          <br>
+        </ul>
+      </div>
+    </div>
 
     </div>
-    <div class="grid-page-3 people-3 animate__animated animate__zoomIn animate__fast"></div>
+    <div class="grid-page-3 people-3 services-3 animate__animated animate__zoomIn animate__fast">
+      <div class="scroll-below animate__animated animate__fadeInDown">Scroll Below <br>
+        <i class="fas fa-angle-double-down"></i>
+      </div>
+      <div class="services-description animate__animated animate__fadeIn animate__slow" id="administration">
+        <h1>Administration</h1>
+        <h3>" Lorem ipsum dolor sit amet, consectetur adipisicing elit ! "</h3>
+
+        <div class="people-wrapper">
+
+          <div class="people-individual">
+            <div class="people-image"><img
+                src="https://images.pexels.com/photos/1520760/pexels-photo-1520760.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                alt=""></div>
+            <h3>Aswini</h3>
+            <h6>CEO</h6>
+          </div>
+
+          <div class="people-individual">
+            <div class="people-image"><img
+                src="https://images.pexels.com/photos/936229/pexels-photo-936229.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                alt=""></div>
+            <h3>Bryan K</h3>
+            <h6>CTO</h6>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="services-description animate__animated animate__fadeIn animate__slow" id="finance">
+        <h1>Finance</h1>
+        <h3>" Lorem ipsum dolor sit amet, consectetur adipisicing elit ! "</h3>
+
+        <div class="people-wrapper">
+
+          <div class="people-individual">
+            <div class="people-image"><img
+                src="https://images.pexels.com/photos/1520760/pexels-photo-1520760.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                alt=""></div>
+            <h3>Aswini</h3>
+            <h6>CEO</h6>
+          </div>
+
+          <div class="people-individual">
+            <div class="people-image"><img
+                src="https://images.pexels.com/photos/936229/pexels-photo-936229.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                alt=""></div>
+            <h3>Bryan K</h3>
+            <h6>CTO</h6>
+          </div>
+
+        </div>
+      </div>
+      <div class="services-description animate__animated animate__fadeIn animate__slow" id="technical">
+        <h1>Technical</h1>
+        <h3>" Lorem ipsum dolor sit amet, consectetur adipisicing elit ! "</h3>
+
+        <div class="people-wrapper">
+
+          <div class="people-individual">
+            <div class="people-image"><img
+                src="https://images.pexels.com/photos/1520760/pexels-photo-1520760.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                alt=""></div>
+            <h3>Aswini</h3>
+            <h6>CEO</h6>
+          </div>
+
+          <div class="people-individual">
+            <div class="people-image"><img
+                src="https://images.pexels.com/photos/936229/pexels-photo-936229.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                alt=""></div>
+            <h3>Bryan K</h3>
+            <h6>CTO</h6>
+          </div>
+
+        </div>
+      </div>
+      <div class="services-description animate__animated animate__fadeIn animate__slow" id="pmarketing">
+        <h1>Marketing</h1>
+        <h3>" Lorem ipsum dolor sit amet, consectetur adipisicing elit ! "</h3>
+
+        <div class="people-wrapper">
+
+          <div class="people-individual">
+            <div class="people-image"><img
+                src="https://images.pexels.com/photos/1520760/pexels-photo-1520760.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                alt=""></div>
+            <h3>Aswini</h3>
+            <h6>CEO</h6>
+          </div>
+
+          <div class="people-individual">
+            <div class="people-image"><img
+                src="https://images.pexels.com/photos/936229/pexels-photo-936229.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                alt=""></div>
+            <h3>Bryan K</h3>
+            <h6>CTO</h6>
+          </div>
+
+        </div>
+      </div>
+      <div class="services-description animate__animated animate__fadeIn animate__slow" id="others">
+        <h1>Others</h1>
+        <h3>" Lorem ipsum dolor sit amet, consectetur adipisicing elit ! "</h3>
+
+        <div class="people-wrapper">
+
+          <div class="people-individual">
+            <div class="people-image"><img
+                src="https://images.pexels.com/photos/1520760/pexels-photo-1520760.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                alt=""></div>
+            <h3>Aswini</h3>
+            <h6>CEO</h6>
+          </div>
+
+          <div class="people-individual">
+            <div class="people-image"><img
+                src="https://images.pexels.com/photos/936229/pexels-photo-936229.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                alt=""></div>
+            <h3>Bryan K</h3>
+            <h6>CTO</h6>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    </div>
 
   </section>
   <!-- END OF PEOPLE -->
@@ -240,6 +391,8 @@
       </div>
     </div>
   </section>
+
+
 
 
   <!-- JAVASCRIPT LINK -->

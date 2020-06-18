@@ -14,6 +14,12 @@ a:hover{
   text-decoration: underline;
 }
 
+img{
+  height: 100%;
+  width: 100%;
+  background: cover;
+}
+
 .hover-under a{
   color: #ffffff;
   text-decoration: none;
@@ -46,6 +52,8 @@ a:hover{
   height: 100vh;
   width: 100%;
 }
+
+
 
 /* GRID PAGE STYLE - 1 */
 .grid-page{
@@ -276,6 +284,7 @@ padding: 0;
 .services-description{
   position: absolute;
   display: none;
+  overflow: hidden;
 }
 
 .services-description>p{
@@ -299,6 +308,11 @@ box-sizing: border-box;
 padding: 2%;
 }
 
+.about-2-logo{
+  height: 25%;
+  width: 25%;
+}
+
 .about-3{
 
 }
@@ -313,8 +327,47 @@ padding: 2%;
 /* PEOPLE */
 .people-2{}
 .people-3{
+} 
 
-}  
+.people-3-content{
+  height: 100%;
+}
+
+.people-wrapper {
+  height: 50vh;
+  overflow: scroll;
+  position: relative;
+}
+
+.people-wrapper h6{
+  margin-bottom: 8px;
+}
+
+.people-wrapper::-webkit-scrollbar {
+  display: none;
+}
+.people-individual{
+  height: fit-content;
+  
+
+}
+
+.people-image{
+  width: 35%;
+  margin: auto;
+}
+
+.scroll-below{
+  position: fixed;
+  animation-iteration-count: infinite;
+  --animate-duration: 2s;
+  --animate-delay: 0.5s;
+  bottom: 5%;
+    right: 5%;
+color: #797878;
+
+}
+
 /* END OF PEOPLE */
 
 /* CONTACT */

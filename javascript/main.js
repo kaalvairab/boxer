@@ -44,6 +44,7 @@ let aboutContactOpen = document.getElementById('about-contact');
 // PEOPLE
 let people = document.querySelector('.people');
 let peopleClose = document.querySelector('.people-1');
+let peopleWrapper = document.querySelector('.people-wrapper');
 
 // CONTACT
 let contact = document.querySelector('.contact');
@@ -70,6 +71,7 @@ navClose.addEventListener('click', e => {
 // SERVICES OPEN
 servicesOpen.addEventListener('click', e => {
   showHide(services, navigation);
+  document.getElementById("defaultOpenServices").click();
 });
 // SERVICES CLOSE
 servicesClose.addEventListener('click', e => {
@@ -85,7 +87,9 @@ servicesContactOpen.addEventListener('click', e => {
 // LIST OF SERVICES
 
 // Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
+
+
+
 
 function openTab(evt, tabId) {
   // Declare all variables
@@ -100,12 +104,16 @@ function openTab(evt, tabId) {
   // Get all elements with class="tablinks" and remove the class "active"
   tablinks = document.getElementsByClassName("services-link");
   for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
+    tablinks[i].className = tablinks[i].className.replace("active", "");
+
   }
 
   // Show the current tab, and add an "active" class to the link that opened the tab
   document.getElementById(tabId).style.display = "block";
   evt.currentTarget.className += " active";
+
+
+
 }
 
 // ABOUT
@@ -130,6 +138,7 @@ aboutContactOpen.addEventListener('click', e => {
 // OPEN
 peopleOpen.addEventListener('click', e => {
   showHide(people, navigation);
+  document.getElementById("defaultOpenPeople").click();
 });
 
 // CLOSE
@@ -137,6 +146,12 @@ peopleClose.addEventListener('click', e => {
   showHide(navigation, people);
   showHide(navigation, landing);
 });
+
+// 
+peopleWrapper.addEventListener('scroll', e => {
+  peopleWrapper.lastChild.style.display = "none";
+  peopleWrapper.firstChild.style.display = "block";
+})
 
 
 // CONTACT
@@ -147,6 +162,8 @@ contactClose.addEventListener('click', e => {
   showHide(navigation, services);
   showHide(navigation, about);
 });
+
+
 
 
 
